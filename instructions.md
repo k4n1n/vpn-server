@@ -68,20 +68,12 @@ cp /etc/easy-rsa/pki/ca.crt /etc/openvpn/server
 cp /etc/easy-rsa/pki/private/servername.key /etc/openvpn/server
 
 
+## References
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### https://wiki.archlinux.org/index.php/OpenVPN
+### https://wiki.archlinux.org/index.php/Easy-RSA
+### https://en.wikipedia.org/wiki/Public_key_infrastructure
+### https://github.com/angristan/openvpn-install/blob/master/openvpn-install.sh
+### http://sites.inka.de/bigred/devel/tcp-tcp.html
 
 
