@@ -1,21 +1,21 @@
 # Check if Distribution
 
-dist = uname -a | cut -d' ' -f 3
+	dist = uname -a | cut -d' ' -f 3
 
 if "arch" in dist:
 
 # Install easy-rsa package.
 	sudo pacman -S easy-rsa --noconfirm
 
-#if "debian" in dist:
+# if "debian" in dist:
 	sudo apt-get install easy-rsa -y
 
-cd /etc/easy-rsa
+	cd /etc/easy-rsa
 
-echo "set_var EASYRSA_ALGO ec" >> /etc/easy-rsa/vars
-echo "set_var EASYRSA_CURVE secp521r1" >> /etc/easy-rsa/vars
-echo "set_var EASYRSA_DIGEST "sha512" >> /etc/easy-rsa/vars
-echo "set_var EASYRSA_NS_SUPPORT "yes" >> /etc/easy-rsa/vars
+	echo "set_var EASYRSA_ALGO ec" >> /etc/easy-rsa/vars
+	echo "set_var EASYRSA_CURVE secp521r1" >> /etc/easy-rsa/vars
+	echo "set_var EASYRSA_DIGEST "sha512" >> /etc/easy-rsa/vars
+	echo "set_var EASYRSA_NS_SUPPORT "yes" >> /etc/easy-rsa/vars
 
 
 export EASYRSA=$(pwd)
